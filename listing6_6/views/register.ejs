@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <p>Fill in the form below to sign up!</p>
+    <% include message %>
+    <form action='/register' method='post'>
+      <p>
+        <input type='text' name='name' placeholser='Username'/>
+      </p>
+      <p>
+        <input type='password' name='pass' placeholser='Password'/>
+      </p>
+      <p>
+        <input type='submit' value='Sign Up'/>
+      </p>
+    </form>
+  </body>
+</html>

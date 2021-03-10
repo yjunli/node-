@@ -1,0 +1,15 @@
+<!-- 包含另一个模版 -->
+<% include head %>
+<ul>
+  <!-- 循环遍历文章并渲染它 -->
+  <% articles.forEach((article)=>{%>
+    <li>
+      <a href="/articles/<%=article.id%>">
+        <!-- 将文章标题作为连接文本 -->
+        <%=article.title%>
+      </a>
+    </li>
+  <% }) %>
+</ul>
+<% include foot %>
+<!-- 包含另一个模版 -->

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <p>Fill in the form below to add a new post.</p>
+    <% include menu %>
+    <form action='/post' method='post'>
+      <p>
+        <input type='text' name='title' placeholder="Title" />
+      </p>
+      <p>
+        <textarea name="body" placeholder="Body"></textarea>
+      </p>
+      <p>
+        <input type='submit' value="Post"/>
+      </p>
+    </form>
+  </head>
+</html>
